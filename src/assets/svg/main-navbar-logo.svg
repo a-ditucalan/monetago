@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="161" height="40" viewBox="0 0 161 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.001" y1="0.5" x2="0.245" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2874ad"/>
+      <stop offset="1" stop-color="#182e58"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_90" data-name="Group 90" transform="translate(-40 -40)">
+    <g id="Group_1" data-name="Group 1" transform="translate(40 40)">
+      <path id="Path_1" data-name="Path 1" d="M16.374,30.33,0,40V0L16.374,9.56,32.747,0V40Z" fill="#f9b214"/>
+      <g id="Group_1-2" data-name="Group 1" transform="translate(1.319 2.418)">
+        <path id="Path_2" data-name="Path 2" d="M31.2,37.365V2.2L1.2,19.782Z" transform="translate(-1.2 -2.2)" fill="#182e58"/>
+        <path id="Path_3" data-name="Path 3" d="M1.2,2.2V37.365l30-17.582Z" transform="translate(-1.2 -2.2)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_89" data-name="Group 89" transform="translate(0 2)">
+      <text id="Moneta" transform="translate(87 67)" fill="#182e58" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Moneta</tspan></text>
+      <text id="Go" transform="translate(170 67)" fill="#f9b214" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Go</tspan></text>
+    </g>
+  </g>
+</svg>

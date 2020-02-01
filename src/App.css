@@ -1,0 +1,43 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

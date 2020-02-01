@@ -1,0 +1,338 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.modal-legal-info-wrapper {
+  padding: 60px;
+
+  .innertab-wrapper {
+    position: relative;
+
+    margin-top: 0;
+  }
+
+
+  .org-subsidary-title {
+    @extend .segoe-regular;
+    font-size: 14px;
+    color: $gray-10;
+
+    span {
+      color: $blue-400;
+    }
+  }
+
+  .innrtab-submenu {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: translateY(-50%);
+
+    .button {
+      margin-left: 20px;
+    }
+  }
+
+  .input-title {
+    @extend .segoe-regular;
+    font-size: 14px;
+
+    color: $gray-5;
+  }
+
+  .input-title-scheme {
+    @extend .segoe-regular;
+    display: flow-root;
+    margin-top: 10px;
+
+    font-size: 14px;
+    color: #45a5ef;
+  }
+
+  .ui.input {
+    margin-top: 5px;
+
+    input {
+      height: 37px;
+
+      border: 1px solid #cbcbcb;
+      border-radius: 3px;
+    }
+  }
+
+  .legal-info-header {
+    border-bottom: 1px solid $gray-25;
+
+    .legal-info-title {
+      @extend .segoe-regular;
+      width: fit-content;
+
+      font-size: 18px;
+
+      color: $brand-color;
+
+      border-bottom: 1px solid $brand-color;
+    }
+  }
+
+
+  .subsidary-wrapper {
+
+
+    display: flex;
+
+
+    .subsidary-title {
+      position: relative;
+
+      margin-top: 30px;
+
+
+      .subsidary-view {
+        position: absolute;
+        right: 40px;
+
+      }
+    }
+
+
+    .subsidary-holder {
+      .content-type {
+        margin-bottom: 10px;
+      }
+    }
+
+    & > div {
+      flex-basis: 33.33%;
+    }
+  }
+
+  .legal-modal-block-one {
+
+    display: flex;
+    margin: 24px 0;
+
+    & > div {
+      flex-basis: 33.33%;
+    }
+
+    .subsidary-phone {
+      margin-top: 5px;
+    }
+
+    .subsidary-fax {
+      .subsidary-fax-wrapper {
+        display: flex;
+
+        .input-wrapper {
+          flex-basis: 20%;
+        }
+
+        input {
+          width: 59px;
+        }
+      }
+    }
+
+    .org-title {
+      @extend .segoe-regular;
+      margin-bottom: 10px;
+
+      font-size: 28px;
+      color: $blue-700;
+    }
+
+    .input-wrapper {
+      flex-basis: 33.33%;
+
+      input {
+        width: 291px;
+      }
+    }
+
+    .contact-view {
+      flex-basis: 33.33%;
+    }
+  }
+
+  .legal-modal-block-two {
+    display: flex;
+    margin-bottom: 24px;
+
+    & > div {
+      flex-basis: 33.33%;
+    }
+
+    .legal-number {
+      margin-bottom: 5px;
+
+      input {
+        width: 291px;
+        height: 37px;
+
+        border: 1px solid #cbcbcb;
+        border-radius: 3px;
+      }
+    }
+
+    .legal-number-wrapper {
+      margin-top: 5px;
+    }
+
+    .legal-fax-wrapper {
+      display: flex;
+      width: 291px;
+
+      .input-wrapper {
+        margin-right: 5px;
+        width: auto;
+
+        input {
+          width: 59px;
+        }
+      }
+    }
+
+    .input-domain {
+      width: 291px;
+    }
+  }
+
+  .legal-modal-block-three {
+    display: flex;
+    margin-bottom: 24px;
+
+    .legal-city,
+    .legal-street,
+    .legal-country {
+      flex-basis: 33.33%;
+    }
+
+    .legal-street-wrapper,
+    .legal-city-wrapper,
+    .legal-country-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 291px;
+    }
+
+    .legal-city {
+      .input-wrapper {
+        width: auto;
+
+        input {
+          width: 291px;
+        }
+      }
+
+      .legal-city-wrapper {
+        width: 100%;
+      }
+    }
+
+    .legal-country {
+      .input-wrapper {
+        width: auto;
+      }
+
+      .legal-country-wrapper {
+        .country {
+          margin-top: 5px;
+          width: 202px;
+        }
+
+        .zipcode {
+          width: 73px;
+        }
+      }
+    }
+
+    .legal-street {
+      .input-wrapper {
+        width: auto;
+      }
+
+      .street-num {
+        width: 66px;
+      }
+
+      .street {
+        width: 216px;
+      }
+    }
+  }
+
+  .legal-info-button,
+  .search-block {
+    .corporate-mod-btn {
+      @extend .segoe-regular;
+      width: 105px;
+      height: 37px;
+
+      font-size: 14px;
+      text-transform: uppercase;
+
+      border-radius: 100px;
+    }
+  }
+
+  .business-unit-contact-person {
+    display: flex;
+    justify-content: space-between;
+
+    &-wrapper {
+      .edit-btn-wrapper {
+        float: right;
+      }
+    }
+
+    & > div {
+      flex-basis: 32%;
+      margin-top: 37px;
+
+      .contact-person-name {
+        @extend .segoe-regular;
+
+        font-size: 18px;
+        color: $gray-700;
+      }
+
+      .contact-subtext {
+        @extend .segoe-regular;
+        font-size: 14px;
+        color: $gray-700;
+      }
+
+      .contact-text {
+        @extend .segoe-regular;
+        font-size: 14px;
+        color: $blue-400;
+      }
+    }
+  }
+
+  .corporate-btn {
+    @extend .segoe-regular;
+    padding: 0;
+
+    font-size: 14px;
+    color: $gray-300;
+
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    img {
+      margin-right: 5px;
+    }
+  }
+}

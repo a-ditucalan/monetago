@@ -1,0 +1,53 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+// @import url('https://fonts.googleapis.com/css?family=Rubik:400');
+
+// @include font-face($font-poppins, '../assets/fonts/', 'Poppins-Light', 'Poppins-Light', 200);
+// @include font-face($font-poppins, '../assets/fonts/', 'Poppins-Bold', 'Poppins-Bold', 600);
+// @include font-face($font-poppins, '../assets/fonts/', 'Poppins-SemiBold', 'Poppins-SemiBold', 500);
+// @include font-face($font-poppins, '../assets/fonts/', 'Poppins-ExtraBold', 'Poppins-ExtraBold', 800);
+
+// GET FROM GOOGLE FONTS IF YOU CAN!
+// Handle font variants as proper font-weights and styles INSTEAD of declaring NEW families. Follow Sample Above
+
+//Segoe UI
+@include font-face(
+  $font-segoe-ui,
+  "../assets/fonts/",
+  "segoe-ui-regular",
+  "segoe-ui-regular",
+  400
+);
+
+@include font-face(
+  $font-segoe-ui,
+  "../assets/fonts/",
+  "segoe-ui-semibold",
+  "segoe-ui-semibold",
+  600
+);
+
+@include font-face(
+  $font-segoe-ui,
+  "../assets/fonts/",
+  "segoe-ui-bold",
+  "segoe-ui-bold",
+  700
+);
+
+//Roboto
+@include font-face(
+  $font-roboto,
+  "../assets/fonts/",
+  "roboto-regular",
+  "roboto-regular",
+  400
+);

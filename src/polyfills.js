@@ -1,0 +1,8 @@
+import 'react-app-polyfill/ie11'
+import 'core-js/features/array/find'
+import 'core-js/features/array/includes'
+import 'core-js/features/number/is-nan'
+import 'core-js/stable'
+import 'core-js/modules/es.array.iterator'
+import 'core-js/modules/es.object.to-string'
+import 'core-js/modules/es.set'

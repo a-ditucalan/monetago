@@ -1,0 +1,76 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.add-new-organization-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // margin: auto;
+  // width: 80%;
+  padding: 0 115px;
+  height: 100%;
+
+  .organization-inputs {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+
+    font-size: 18px;
+  }
+
+  .select-org-dropdown {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50px;
+
+    font-size: 18px;
+  }
+
+  .btn-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    width: 100%;
+
+    text-align: end;
+
+    .cancel-btn {
+      margin-right: 10px;
+      width: 160px;
+    }
+
+    .create-btn {
+      width: 240px;
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .add-new-organization-wrapper {
+    padding: 0 50px;
+
+    .btn-actions {
+      .cancel-btn {
+        width: 140px;
+        height: 50px;
+
+        font-size: 13px;
+      }
+      .create-btn {
+        width: 195px;
+        height: 50px;
+
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.disabled {
+  border: none !important;
+
+  pointer-events: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn,
+a {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
+  @include on-event {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+// * :not(button) {
+//   animation-name: fadeIn;
+//   animation-duration: .3s;
+// }
+
+//Form styles for custom popup
+form {
+  position: relative;
+}
+
+/**
+ * Basic styles for input fields
+ */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-focus-ring-color: none;
+
+  @include on-event {
+    box-shadow: none;
+  }
+}
+
+input,
+select,
+button,
+textarea {
+  outline: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    @include appearance(none);
+  }
+
+  @include appearance(none);
+}
+
+//Semantic UI
+.ui.dimmer {
+  background-color: $blue-700;
+}
+
+.ui.selection.dropdown {
+  font-size: 16px;
+  line-height: 24px;
+  color: $blue-100;
+
+  & > .dropdown.icon {
+    padding: 16px;
+  }
+}
+
+.ui.input {
+  & > input {
+    color: $blue-100;
+
+    @include on-event {
+      color: $blue-100;
+
+      border-color: $gray-100 !important;
+    }
+  }
+
+  &.error {
+    & > input {
+      @include on-event {
+        color: $red-100;
+  
+        border-color: $red-200 !important;
+      }
+    }
+  }
+}
+
+.ui.tiny.modal {
+  overflow-y: unset !important;
+}
+
+.ui.inline.loader.active {
+  margin-left: 5px;
+}

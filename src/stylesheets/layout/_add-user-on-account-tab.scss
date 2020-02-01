@@ -1,0 +1,125 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.add-user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // margin: 0 auto;
+  // width: 80%;
+  padding: 50px 115px;
+  height: 100%;
+
+  .input-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .fullwidth-inputs {
+    // margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+
+    font-size: 18px;
+    color: $blue-100;
+  }
+
+  .fullwidth-dropdown {
+    margin-bottom: 20px;
+    height: 50px;
+  }
+
+  .fullname-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+
+    .input-wrapper {
+      width: 49%;
+    }
+
+    .halfwidth-inputs {
+      // margin-bottom: 20px;
+      width: 100%;
+      height: 50px;
+
+      font-size: 18px;
+      color: $blue-100;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-top: 3%;
+    width: 100%;
+
+    text-align: end;
+
+    .cancel-btn {
+      width: 150px;
+    }
+
+    .create-btn {
+      width: 200px;
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .add-user-container {
+    padding: 50px;
+    
+    .fullwidth-inputs {
+      margin-bottom: 15px;
+      height: 45px;
+    }
+
+    .fullname-container {
+      display: block;
+
+      .input-wrapper {
+        width: 100%;
+      }
+
+      .halfwidth-inputs {
+        margin-bottom: 15px;
+        height: 45px;
+      }
+    }
+
+    .actions {
+      text-align: right;
+
+      .cancel-btn {
+        width: 150px;
+        height: 45px;
+
+        font-size: 14px;
+      }
+      .create-btn {
+        width: 170px;
+        height: 45px;
+
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (min-height: 768px) and (max-height: 800px) {
+  .add-user-container {
+    .input-wrapper {
+      margin-bottom: 13px;
+    }
+  }
+}

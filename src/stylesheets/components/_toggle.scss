@@ -1,0 +1,92 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+input[type="checkbox"].toggle {
+  position: absolute;
+  left: -99999px;
+
+  opacity: 0;
+}
+
+input[type="checkbox"].toggle + label {
+  position: relative;
+
+  display: inline-block;
+  padding: 0 7px;
+  width: 51px;
+  height: 27px;
+
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 40px;
+
+  background-color: #ccc;
+  border-radius: 100px;
+
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+
+input[type="checkbox"].toggle + label:before, input[type="checkbox"].toggle + label:hover:before {
+  content: " ";
+
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  z-index: 2;
+
+  width: 37px;
+  height: 37px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 5px #00000029;
+
+  transition: all .3s ease-in;
+  transform: translateY(-50%);
+
+  background: $gray-25;
+}
+
+input[type="checkbox"].toggle + label .off, input[type="checkbox"].toggle + label .on {
+  color: #fff;
+}
+
+input[type="checkbox"].toggle + label .off {
+  display: inline-block;
+  margin-right: 6px;
+  margin-left: 38px;
+}
+
+input[type="checkbox"].toggle + label .on {
+  display: none;
+}
+
+input[type="checkbox"].toggle:checked + label .off {
+  display: none;
+}
+
+input[type="checkbox"].toggle:checked + label .on {
+  display: inline-block;
+  margin-right: 38px;
+  margin-left: 6px;
+}
+
+input[type="checkbox"].toggle:checked + label, input[type="checkbox"].toggle:focus:checked + label {
+  background-color: $blue-400;
+}
+
+input[type="checkbox"].toggle:checked + label:before, input[type="checkbox"].toggle:checked + label:hover:before, input[type="checkbox"].toggle:focus:checked + label:before, input[type="checkbox"].toggle:focus:checked + label:hover:before {
+  top: 50%;
+  left: 100%;
+
+  margin-left: -33px;
+
+  background-position: 0 0;
+}

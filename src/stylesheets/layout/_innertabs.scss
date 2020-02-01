@@ -1,0 +1,74 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.innertab-wrapper {
+  display: flex;
+  flex-basis: 85%;
+
+  // margin-bottom: 40px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 100%;
+  height: 40px;
+
+  border-bottom: 1px solid $gray-100;
+
+
+  .innertab-item {
+    position: relative;
+
+    cursor: pointer;
+
+    div {
+      display: flex;
+      justify-content: center;
+      padding: 12px 20px;
+
+      transition: all .3s ease-in-out;
+
+
+      &:before {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 0;
+        height: 2px;
+
+        background-color: $blue-400;
+
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+
+  .active {
+    div {
+      transition: all .3s ease-in-out;
+
+      &:before {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: $blue-400;
+
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.main-navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+
+  background-color: $brand-color;
+  border-bottom: 1px solid $gray-50;
+
+  // box-shadow: 0 -7px 23px 0 rgba(0, 0, 0, .75);
+
+  .navbar-section {
+    display: flex;
+  }
+
+  .navbar-user {
+    &-wrapper {
+      cursor: pointer;
+
+      & div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dropdown {
+        margin: 0 5px 4px;
+
+        color: $white;
+      }
+    }
+
+    &-avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+
+      font-family: $font-segoe-ui;
+      font-size: 16px;
+      font-weight: 400;
+      color: $white;
+
+      background-color: $blue-500;
+      border-radius: 50%;
+    }
+
+    &-name {
+      font-family: $font-segoe-ui;
+      font-size: 16px;
+      font-weight: 400;
+      color: $white;
+    }
+  }
+}
+
+.menu-wrapper {
+  padding: 8px 0;
+  width: 155px;
+
+  .menu-item {
+    padding: 6px 8px;
+
+    font-family: $font-segoe-ui;
+    font-size: 16px;
+    font-weight: 400;
+    color: $blue-100;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $white;
+
+      background-color: $blue-500;
+    }
+  }
+}
+
+.notification {
+  &-wrapper {
+    .ui.floating.label {
+      top: 1em;
+      left: 96.2%;
+
+      display: flex;
+      align-items: center;
+
+      margin: 0;
+
+      width: 27px;
+      height: 27px;
+
+      font-size: .68714286rem;
+      text-align: center;
+
+      border-radius: 50%;
+
+    }
+  }
+
+  &-bell {
+    margin-left: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &-content {
+    margin-bottom: 30px;
+    width: 524px;
+
+    color: $black;
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+
+    color: #000;
+
+    border-bottom: 1px solid $gray-50;
+
+    h3 {
+      font-size: 20px;
+      font-style: italic;
+    }
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+
+    font-style: italic;
+
+    p {
+      font-size: 14px;
+      color: $gray-300;
+
+      cursor: pointer;
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    &:hover {
+      background-color: $gray-25;
+
+      transition: all 200ms ease-in-out;
+    }
+
+    .details {
+      h2 {
+        margin: 0;
+
+        font-size: 18px;
+      }
+      p {
+
+        font-size: 14px;
+
+        color: $gray-300;
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      width: 220px;
+
+      font-size: 14px;
+
+      color: $gray-300;
+
+      p {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-item-approved {
+    @extend .notification-item;
+    justify-content: flex-start;
+
+    .check {
+      margin-top: 15px;
+      margin-right: 10px;
+
+      font-size: 30px;
+      color: $green-300;
+    }
+
+    .network{
+      font-weight: 600;
+      color: $blue-400;
+
+      cursor: pointer;
+    }
+  }
+}

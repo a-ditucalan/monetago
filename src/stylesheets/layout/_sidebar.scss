@@ -1,0 +1,108 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.sidebar {
+  z-index: 5;
+
+  // flex-basis: 15%;
+
+  width: 280px;
+  height: 170vh;
+  max-height: 100%;
+
+  box-shadow: 8px 25px 40px #7989a833;
+
+  opacity: 1;
+
+  background: #fff 0% 0% no-repeat padding-box;
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    padding: 21px 0;
+
+    border-bottom: 1px solid $gray-50;
+
+    cursor: pointer;
+
+    p {
+      margin-left: 10px;
+
+      font-size: 24px;
+      color: $blue-100;
+
+      span {
+        color: $yellow-100;
+      }
+    }
+  }
+
+  .navbar-logo {
+    width: 30px;
+    height: 35px;
+  }
+
+  .sidebar-title {
+    padding: 30px 0 30px 40px;
+
+    color: $gray-300;
+
+    border-bottom: 1px solid $gray-50;
+
+    cursor: default;
+
+    img {
+      margin-right: 14px;
+    }
+  }
+
+  .side-item {
+    padding-left: 40px;
+
+    font-family: $font-segoe-ui;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-300;
+  }
+
+  .sidebar-sub-item {
+    padding: 30px 0;
+
+    @include on-event {
+      cursor: pointer;
+    }
+
+    span {
+      img {
+        margin-right: 14px;
+      }
+    }
+  }
+
+  .active {
+    background-color: #45a5ef;
+
+    span {
+      color: $white;
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .sidebar {
+    flex-basis: 25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .sidebar {
+    flex-basis: 20%;
+  }
+}

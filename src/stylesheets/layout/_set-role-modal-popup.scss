@@ -1,0 +1,79 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.ui.tiny.modal.transition.visible.active {
+  top: 50%;
+  right: 5%;
+
+  overflow-y: hidden;
+
+  transform: translate(0, -50%);
+}
+.set-role-content {
+  padding: 40px !important;
+
+  .modal-form-title {
+    margin-bottom: 10px;
+  }
+
+  .dropdown-select-role {
+    width: 100%;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+
+    text-align: -webkit-right;
+
+    .btn-cancel {
+      margin-right: 10px;
+      width: 140px;
+    }
+
+    .btn-save {
+      width: 200px;
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .ui.tiny.modal.transition.visible.active {
+    width: 335px;
+  }
+
+  .set-role-content {
+    .modal-form-title {
+      font-size: 23px;
+    }
+    .dropdown-select-role {
+      height: 40px;
+
+      font-size: 16px;
+    }
+    .btn-container {
+      .btn-cancel {
+        width: 100px;
+        height: 40px;
+
+        font-size: 12px;
+      }
+      .btn-save {
+        width: 130px;
+        height: 40px;
+
+        font-size: 12px;
+      }
+    }
+  }
+}

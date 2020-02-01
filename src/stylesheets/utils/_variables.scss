@@ -1,0 +1,78 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial",
+  sans-serif !default;
+$font-segoe-ui: "Segoe UI";
+$font-roboto: "Roboto";
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+$white: #fff;
+/// Main brand color
+/// @type Color
+$brand-color: #182e58 !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: "../assets/" !default;
+
+// Other Variables
+
+$white: #fff;
+$black: #000;
+
+$blue-100: #182e58;
+$blue-200: #25679d;
+$blue-300: #2872ab;
+$blue-400: #45a5ef;
+$blue-500: #86bfe5;
+$blue-600: #507ed9;
+$blue-700: #182e5896;
+
+$gray-5: #8e8e8e;
+$gray-10: #c4c4c4;
+$gray-25: #ececec;
+$gray-50: #e4e9f1;
+$gray-100: #bfc7d6;
+$gray-200: #9fa4b4;
+$gray-300: #616f8a;
+$gray-400: #dde3f3;
+$gray-500: #656f8859;
+$gray-600: #a5b1c8;
+$gray-700: #4f5057;
+
+$green-100: #50d995;
+$green-200: #4caf50;
+$green-300: #44f568;
+
+$lavender-100: #b774dc;
+
+$red-100: #9f3a38;
+$red-200: #e0b4b4;
+$red-300: #f44336;
+
+$yellow-100: #f9b214;

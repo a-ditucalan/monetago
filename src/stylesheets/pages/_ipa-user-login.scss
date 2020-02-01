@@ -1,0 +1,440 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.login-body {
+  width: 100%;
+  height: 100%;
+
+  background-image: image('../../assets/images/background_image.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-page-wrapper {
+  display: flex;
+  margin: auto;
+  height: 100vh;
+
+  .login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 22%;
+    padding-bottom: 22%;
+    margin: auto;
+    width: 100%;
+
+    text-align: center;
+
+    background-color: #fff;
+
+    border-radius: 20px;
+
+    -moz-box-shadow: 0 0 10px #c0c0c0;
+    -webkit-box-shadow: 0 0 10px #c0c0c0;
+    -o-box-shadow: 0 0 10px #c0c0c0;
+    box-shadow: 0 0 10px #c0c0c0;
+
+    .ipa-login-logo {
+      margin: auto;
+      width: 100px;
+      height: 100px;
+    }
+    .login-message {
+      margin-top: 20px;
+
+      font-size: 22px;
+      font-weight: 700;
+      color: #182e58;
+    }
+    .steps {
+      margin: auto;
+      margin-top: -20px;
+      margin-bottom: 20px;
+      width: 60%;
+
+      color: #182e58;
+    }
+    .input-wrapper {
+      margin: auto;
+      width: 60%;
+    }
+    .user-input {
+      width: 100%;
+
+      color: #182e58;
+    }
+    .password-input {
+      margin-top: 30px;
+      width: 100%;
+
+      color: #182e58;
+    }
+
+    .checkbox-wrapper {
+      position: relative;
+
+      display: flex;
+      margin: auto;
+      margin-top: 20px;
+      width: 60%;
+
+      .message-keep {
+        margin-top: -2px;
+        margin-left: 3px;
+
+        color: #c0c0c0;
+
+        cursor: pointer;
+      }
+      .message-forgot {
+        position: absolute;
+        right: 0;
+
+        flex: auto;
+        margin-top: -2px;
+
+        color: #c0c0c0;
+        text-align: -webkit-right;
+
+        cursor: pointer;
+      }
+    }
+
+    .btn-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 60%;
+
+      .sign-in-btn {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        height: 45px;
+
+        font-weight: 100;
+
+        color: #fff;
+
+        background-color: #182e58;
+        border-radius: 0;
+      }
+      .submit-btn {
+        margin-top: 20px;
+        height: 45px;
+
+        font-weight: 100;
+
+        color: #fff;
+
+        background-color: #182e58;
+        border-radius: 0;
+      }
+    }
+    .back-to-login {
+      margin: auto;
+      margin-top: 50px;
+      width: fit-content;
+
+      color: #c0c0c0;
+
+      cursor: pointer;
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .login-page-wrapper {
+    width: 40%;
+
+    .login-content {
+      padding-top: 15%;
+      padding-bottom: 15%;
+
+      border-radius: 10px;
+
+      .ipa-login-logo {
+        width: 70px;
+        height: 70px;
+      }
+      .login-message {
+        margin-top: 15px;
+
+        font-size: 19px;
+      }
+      .steps {
+        font-size: 15px;
+      }
+      .input-wrapper {
+        width: 70%;
+      }
+      .user-input {
+        width: 100%;
+        height: 40px;
+      }
+      .password-input {
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+      }
+      .checkbox-wrapper {
+        margin-top: 15px;
+        width: 70%;
+
+        .message-keep {
+          margin-top: 2px;
+
+          font-size: 14px;
+        }
+        .message-forgot {
+          margin-top: 2px;
+
+          font-size: 14px;
+        }
+      }
+      .btn-wrapper {
+        width: 70%;
+
+        .sign-in-btn {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xl) {
+  .login-page-wrapper {
+    width: 30%;
+
+    .login-content {
+      padding-top: 25%;
+      padding-bottom: 25%;
+
+      border-radius: 10px;
+
+      .ipa-login-logo {
+        width: 90px;
+        height: 90px;
+      }
+      .login-message {
+        margin-top: 15px;
+
+        font-size: 22px;
+      }
+      .input-wrapper {
+        width: 70%;
+      }
+      .user-input {
+        height: 45px;
+      }
+      .password-input {
+        margin-top: 20px;
+        height: 45px;
+      }
+      .checkbox-wrapper {
+        margin-top: 15px;
+        width: 70%;
+
+        .message-keep {
+          margin-top: 2px;
+
+          font-size: 15px;
+        }
+        .message-forgot {
+          margin-top: 2px;
+
+          font-size: 15px;
+        }
+      }
+      .btn-wrapper {
+        width: 70%;
+
+        .sign-in-btn {
+          height: 45px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .login-page-wrapper {
+    width: 50%;
+
+    .login-content {
+      padding-top: 25%;
+      padding-bottom: 25%;
+
+      border-radius: 10px;
+
+      .ipa-login-logo {
+        width: 90px;
+        height: 90px;
+      }
+      .login-message {
+        margin-top: 15px;
+
+        font-size: 22px;
+      }
+      .input-wrapper {
+        width: 70%;
+      }
+      .user-input {
+        height: 45px;
+      }
+      .password-input {
+        margin-top: 20px;
+        height: 45px;
+      }
+      .checkbox-wrapper {
+        margin-top: 15px;
+        width: 70%;
+
+        .message-keep {
+          margin-top: 2px;
+
+          font-size: 15px;
+        }
+        .message-forgot {
+          margin-top: 2px;
+
+          font-size: 15px;
+        }
+      }
+      .btn-wrapper {
+        width: 70%;
+
+        .sign-in-btn {
+          height: 45px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .login-page-wrapper {
+    width: 65%;
+
+    .login-content {
+      padding-top: 15%;
+      padding-bottom: 15%;
+
+      border-radius: 10px;
+
+      .ipa-login-logo {
+        width: 70px;
+        height: 70px;
+      }
+      .login-message {
+        margin-top: 15px;
+
+        font-size: 20px;
+      }
+      .input-wrapper {
+        width: 70%;
+      }
+      .user-input {
+        height: 40px;
+      }
+      .password-input {
+        margin-top: 20px;
+        height: 40px;
+      }
+      .checkbox-wrapper {
+        margin-top: 15px;
+        width: 70%;
+
+        .message-keep {
+          margin-top: 2px;
+
+          font-size: 13px;
+        }
+        .message-forgot {
+          margin-top: 2px;
+
+          font-size: 13px;
+        }
+      }
+      .btn-wrapper {
+        width: 70%;
+
+        .sign-in-btn {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .login-body {
+    background-image: none;
+  }
+
+  .login-page-wrapper {
+    width: 100%;
+
+    .login-content {
+      padding-top: 15%;
+      padding-bottom: 15%;
+
+      border-radius: 0;
+
+      -moz-box-shadow: 0 0 10px #fff;
+      -webkit-box-shadow: 0 0 10px #fff;
+      -o-box-shadow: 0 0 10px #fff;
+      box-shadow: 0 0 10px #fff;
+
+      .ipa-login-logo {
+        width: 70px;
+        height: 70px;
+      }
+      .login-message {
+        margin-top: 15px;
+
+        font-size: 20px;
+      }
+      .input-wrapper {
+        width: 90%;
+      }
+      .user-input {
+        height: 40px;
+      }
+      .password-input {
+        margin-top: 20px;
+        height: 40px;
+      }
+      .checkbox-wrapper {
+        margin-top: 15px;
+        width: 90%;
+
+        .message-keep {
+          margin-top: 2px;
+
+          font-size: 13px;
+        }
+        .message-forgot {
+          margin-top: 2px;
+
+          font-size: 13px;
+        }
+      }
+      .btn-wrapper {
+        width: 90%;
+
+        .sign-in-btn {
+          height: 40px;
+        }
+      }
+    }
+  }
+}

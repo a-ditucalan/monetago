@@ -1,0 +1,462 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.corporate-entity {
+  padding-bottom: 80px;
+
+  .corporate-title {
+    @extend .segoe-regular;
+    margin-bottom: 1px;
+
+    font-size: 28px;
+    color: $blue-100;
+  }
+
+  .corporate-btn {
+    @extend .segoe-regular;
+    padding: 0;
+    margin-right: 15px;
+
+    font-size: 14px;
+    color: $gray-300;
+
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  .corporate-entity-block-one {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin-top: 20px;
+
+    border-bottom: 1px solid $gray-25;
+
+    .content-title {
+      display: flex;
+      align-items: center;
+
+      .corporate-btn {
+        margin-left: 5px;
+      }
+    }
+    &-legal-info {
+      p {
+        margin-bottom: 10px;
+
+        &:nth-child(2) {
+          margin-bottom: 23px;
+        }
+      }
+    }
+
+    .corporate-inheritance {
+      @extend .segoe-regular;
+      margin-bottom: 17px;
+
+      font-size: 18px;
+      color: $blue-100;
+    }
+
+    .coporate-type {
+      @extend .segoe-regular;
+      margin-bottom: 24px;
+
+      font-size: 18px;
+      color: $yellow-100;
+    }
+  }
+
+  .tel-one {
+    position: relative;
+
+    padding-left: 24px;
+
+    &:before {
+      content: url(../assets/svg/ic_phone.svg);
+
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .fax {
+    position: relative;
+
+    padding-left: 24px;
+
+    &:before {
+      content: url(../assets/svg/ic_print.svg);
+
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .company-address {
+    position: relative;
+
+    padding-left: 24px;
+
+    &:before {
+      content: url(../assets/svg/ic_place.svg);
+
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .corporate-email {
+    position: relative;
+
+    padding-left: 24px;
+
+    &:before {
+      content: url(../assets/svg/ic_email.svg);
+
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .corporate-domain {
+    position: relative;
+
+    padding-left: 24px;
+
+    &:before {
+      content: url(../assets/svg/ic_public.svg);
+
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .corporate-entity-block-two {
+    display: flex;
+
+    margin-top: 20px;
+
+    & > div {
+      margin-right: 50px;
+    }
+
+    .contact-person-wrapper {
+      width: 498px;
+
+      border: 1px solid $gray-25;
+
+      .contact-person-title {
+        @extend .segoe-regular;
+        font-size: 18px;
+        color: $gray-10;
+      }
+
+      .tel-one {
+        position: relative;
+
+        padding-left: 24px;
+
+        &:before {
+          content: url(../assets/svg/ic_phone.svg);
+
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+
+    .contact-person-name {
+      @extend .segoe-regular;
+
+      margin-bottom: 5px;
+
+      font-size: 20px;
+      font-weight: 600;
+      color: $blue-100;
+    }
+
+    .contact-person-designation {
+      @extend .segoe-regular;
+      margin-bottom: 15px;
+
+      font-size: 16px;
+      color: $gray-10;
+    }
+
+    .contact-person-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+
+      .contact-person-title {
+        margin-bottom: 0;
+      }
+    }
+
+    .cotant-person-container {
+      display: flex;
+      padding: 16px;
+      width: 100%;
+
+      border: 1px solid $gray-25;
+
+      cursor: pointer;
+
+      &:hover {
+        transition: all .3s ease-in-out;
+
+        background: $blue-100;
+        .contact-person-name,
+        .contact-person-designation,
+        .tel-one,
+        .button {
+          color: $white;
+        }
+      }
+
+      .contact-person-box {
+        flex-basis: 49%;
+        width: 100%;
+      }
+
+      .corporate-buttons {
+        display: flex;
+        flex-basis: 49%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+
+        &:hover {
+          background-color: transparent;
+        }
+
+        .button {
+          background: transparent;
+        }
+      }
+    }
+
+    .business-unit-wrapper {
+      border: 1px solid $gray-25;
+
+      .business-unit-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+
+        .business-unit-edit {
+          display: flex;
+
+          .button {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .business-unit-box {
+        padding: 20px;
+
+        border: 1px solid $gray-25;
+      }
+
+      .business-unit-title {
+        @extend .segoe-regular;
+        margin-bottom: 0;
+
+        font-size: 18px;
+        color: $gray-10;
+      }
+
+      .unit-name {
+        @extend .segoe-regular;
+
+        margin-bottom: 5px;
+
+        font-size: 20px;
+        font-weight: 600;
+        color: $blue-100;
+      }
+    }
+  }
+}
+.add-scheme-wrapper {
+  .legal-info-button {
+    padding-top: 78px;
+  }
+  .search-block {
+    padding-top: 20px;
+  }
+}
+.edit-bu-wrapper {
+  .labels {
+    padding-bottom: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #8e8e8e;
+  }
+
+  .legal-info-button {
+    padding-top: 51px;
+  }
+
+  .without-title {
+    padding-top: 14px;
+  }
+}
+.scheme-name {
+  font-weight: 500;
+  color: #c4c4c4;
+}
+.depo-title {
+  margin-top: -25px;
+
+  font-size: 16px;
+  color: #8e8e8e;
+}
+
+.legal-modal-block-one {
+  .input-wrapper {
+    .ui.selection.dropdown {
+      border: none;
+      border-radius: none;
+
+      .dropdown.icon {
+        padding: .91666667em;
+      }
+    }
+    .ui.selection.dropdown.sample {
+      padding: 0;
+      margin-top: 5px;
+
+      line-height: unset;
+    }
+
+    .ui.selection.dropdown.sample > .text {
+      padding: .67857143em 1em;
+      width: 291px;
+      height: 37px;
+
+      border: 1px solid #cbcbcb;
+      border-radius: 3px;
+    }
+  }
+}
+//my network css
+.my-network-wrapper {
+  padding-right: 80px;
+  padding-left: 80px;
+
+  .inehritance-title {
+    font-weight: 500;
+  }
+
+  .corporate-entity-block-one {
+    border-bottom: 1.5px solid $gray-50;
+  }
+
+  .menu-header {
+    display: flex;
+    margin-top: 20px;
+
+    .input-wrapper {
+      width: 70%;
+
+      .ui.input {
+        width: 90%;
+      }
+    }
+
+    .table-filter {
+      margin-top: -10px;
+      width: 100%;
+    }
+
+    .pagination {
+      .ui.pagination {
+        a.active {
+          color: $blue-400 !important;
+
+          border-color: $blue-400 !important;
+        }
+
+        a:hover {
+          color: $blue-500 !important;
+
+          border-color: $blue-500 !important;
+        }
+
+        a:first-child,
+        a:last-child {
+          font-weight: 900;
+          color: $blue-400;
+
+          border-color: $white !important;
+        }
+      }
+    }
+  }
+
+  .counter-parties-table {
+    margin-top: 50px;
+
+    .sort {
+      cursor: pointer;
+    }
+
+    .uid {
+      font-weight: 600;
+      color: $blue-400;
+    }
+
+    .common-data {
+      color: $blue-200;
+    }
+
+    .connected-wrapper {
+      display: flex;
+      justify-content: space-around;
+      padding: 14px;
+
+      .connected {
+        padding: 5px 20px;
+
+        color: $white;
+
+        background-color: $blue-400;
+        border-radius: 30px;
+      }
+
+      .approval {
+        padding: 5px 14px;
+
+        color: $white;
+
+        background-color: $gray-10;
+        border-radius: 30px;
+      }
+    }
+
+    .menu {
+      cursor: pointer;
+    }
+  }
+}

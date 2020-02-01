@@ -1,0 +1,62 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.ui.centered.cards {
+  padding: 7em 3em;
+}
+
+.ui.centered.cards > .ui.card {
+  width: 360px;
+}
+
+.ui.card,
+.ui.cards > .card {
+  background-color: #f3f3f3;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.ui.card > .content p,
+.ui.cards > .card > .content p {
+  margin: .5em 0;
+}
+
+.ui.card {
+  &:hover {
+    background-color: $blue-100;
+
+    .cardHead,
+    .cardFoot {
+      color: #fff;
+    }
+    .cardDesc {
+      color: #f9b214;
+    }
+  }
+
+  .cardHead {
+    font-family: $font-segoe-ui;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .cardDesc {
+    font-family: $font-segoe-ui;
+    font-size: 35px;
+    font-weight: 700;
+    color: $blue-300;
+  }
+
+  .cardFoot {
+    font-family: $font-segoe-ui;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

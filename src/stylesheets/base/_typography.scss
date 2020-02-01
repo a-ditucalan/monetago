@@ -1,0 +1,164 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+body {
+  color: $text-color;
+
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+.segoe-regular {
+  font-family: $font-segoe-ui;
+  font-weight: 400;
+}
+
+.segoe-bold {
+  font-family: $font-segoe-ui;
+  font-weight: 700;
+}
+
+.roboto-regular {
+  font-family: $font-roboto;
+  font-weight: 400;
+}
+
+.view-text {
+  @extend .segoe-regular;
+  margin-top: 10px;
+
+  font-size: 18px;
+  color: $gray-300;
+}
+
+.view-text-link {
+  @extend .segoe-regular;
+  margin-top: 10px;
+
+  font-size: 18px;
+  color: $blue-400;
+}
+
+.form-title {
+  @extend .segoe-regular;
+  font-size: 32px;
+  color: $blue-100;
+}
+
+.form-subtitle {
+  @extend .segoe-regular;
+  font-size: 20px;
+  color: $blue-200;
+}
+
+.form-subtitle-sm {
+  @extend .segoe-regular;
+  font-size: 16px;
+  color: $blue-200;
+}
+
+.main-info {
+  @extend .segoe-regular;
+  font-size: 16px;
+  color: $blue-400;
+
+}
+
+.form-link-text {
+  @extend .segoe-regular;
+  font-size: 18px;
+  color: $blue-100;
+
+  cursor: pointer;
+}
+
+.content-title {
+  @extend .segoe-regular;
+  font-size: 28px;
+  color: $blue-100;
+}
+
+.content-subtitle {
+  @extend .segoe-regular;
+  font-size: 14px;
+  color: $gray-300;
+}
+
+.subsidary-title {
+  @extend .segoe-regular;
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: $gray-300;
+}
+
+.content-type {
+  @extend .segoe-regular;
+  font-size: 14px;
+  color: $blue-400;
+}
+
+.status-text {
+  @extend .segoe-regular;
+  font-size: 12px;
+  color: $white;
+}
+
+.popup-option-text {
+  @extend .roboto-regular;
+  font-size: 15px;
+  color: $blue-100;
+}
+
+.popup-option-text-del {
+  @extend .roboto-regular;
+  font-size: 15px;
+  color: $gray-200;
+}
+
+.tbl-data-text {
+  @extend .segoe-regular;
+  font-size: 15px;
+  color: $blue-100;
+}
+
+.tbl-data-id {
+  @extend .segoe-bold;
+  font-size: 15px;
+  color: $blue-300;
+}
+
+.org-identity-title {
+  @extend .segoe-regular;
+  font-size: 15px;
+  color: $gray-300;
+}
+
+.org-identity-detail {
+  @extend .segoe-regular;
+  font-size: 16px;
+  color: $blue-100;
+}
+
+
+.address-primary {
+  @extend .segoe-regular;
+  font-size: 16px;
+  color: $gray-300 !important;
+}
+
+.modal-form-title {
+  @extend .segoe-regular;
+  margin-bottom: 20px;
+
+  font-size: 28px;
+  color: $blue-100;
+}

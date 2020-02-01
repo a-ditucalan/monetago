@@ -1,0 +1,201 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.admin-table-wrapper {
+  margin-bottom: 30px;
+
+  .search-input {
+    // margin-bottom: 40px;
+    margin: 40px 0 20px;
+
+    // width: 35%;
+    width: 460px;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .table-filter {
+    margin-bottom: 30px;
+
+  }
+
+  .table-filter-page {
+    .ui.pagination {
+      a.active {
+        color: $blue-400 !important;
+
+        border-color: $blue-400 !important;
+      }
+
+      a:hover {
+        color: $blue-500 !important;
+
+        border-color: $blue-500 !important;
+      }
+
+      a:first-child, a:last-child {
+        font-weight: 900;
+        color: $blue-400;
+
+        border-color: $white !important;
+      }
+    }
+  }
+
+  .ui.table {
+    .ui.checkbox  {
+      input:checked ~ label:after {
+        content: '\2713';
+
+        color: $white;
+      }
+
+      input:checked ~ label:before {
+        border-color: $blue-400;
+
+        background: $blue-400;
+      }
+    }
+
+    & thead th {
+      font-weight: 400;
+
+      background: none;
+    }
+
+    .sort-arrow {
+      width: 13px;
+
+      cursor: pointer;
+    }
+
+    .btn-menu {
+      display: flex;
+      justify-content: center;
+      width: 5px;
+
+      background: none;
+    }
+
+    .vertical-menu {
+      width: 20px;
+    }
+
+    .user-id {
+      padding-left: 30px;
+
+      font-weight: 700;
+      color: $blue-600;
+    }
+
+    .activity {
+      display: flex;
+      justify-content: space-around;
+
+      & .active,
+      & .inactive {
+        padding: 5px 20px;
+
+        color: $white;
+
+        background-color: $blue-400;
+        border-radius: 20px;
+      }
+
+      & .inactive {
+        background-color: $gray-400;
+      }
+    }
+
+    tbody {
+      tr:hover {
+        background-color: $blue-500;
+        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .5);
+
+        transition: all 200ms ease-in-out;
+
+        td {
+          color: $white;
+        }
+      }
+
+      .checked {
+        background-color: $blue-500;
+
+        td {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .table {
+    &-filter-details {
+      flex-direction: column;
+    }
+  }
+}
+
+@include respond-to(lg-up) {
+  .admin-table-wrapper {
+    .table {
+      &-filter {
+        p {
+          width: 100%;
+        }
+
+        .ui.selection.dropdown {
+          margin: 10px;
+        }
+      }
+
+      &-filter-page p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@include respond-to(lg-down) {
+  .admin-table-wrapper {
+    .table {
+      &-filter {
+        flex-wrap: wrap;
+
+        .ui.selection.dropdown {
+          margin: 10px;
+        }
+      }
+
+      &-filter-page, &-filter-page p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@include respond-to(md-down) {
+  .admin-table-wrapper {
+    .table {
+      .table-wrapper {
+        overflow-x: scroll;
+      }
+    }
+  }
+}
+.border-i {
+  border: 1px solid black;
+}

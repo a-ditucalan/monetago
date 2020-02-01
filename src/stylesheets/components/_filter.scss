@@ -1,0 +1,91 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.table-filter {
+  display: flex;
+  align-items: center;
+
+  // justify-content: space-between;
+
+  // width: 60%;
+
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-page {
+    margin-bottom: 30px;
+
+    p {
+      .prev-icon {
+        padding-bottom: 1px;
+        margin-right: 10px;
+        width: 10px;
+
+        cursor: pointer;
+      }
+
+      .next-icon {
+        padding-bottom: 1px;
+        margin-left: 10px;
+        width: 10px;
+
+        cursor: pointer;
+
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &-dropdown {
+    // margin-left: 20px;
+    margin: 10px;
+
+    border-radius: 10px;
+  }
+
+  p {
+    margin: auto 0;
+
+    color: $gray-200;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .table-filter {
+    &-details {
+      align-items: unset;
+    }
+
+    &-page {
+      margin-bottom: 20px;
+
+      text-align: right;
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .table-filter {
+    &-details {
+      flex-direction: column;
+    }
+
+    &-page {
+      p {
+        margin: 0 0 20px;
+
+        text-align: right;
+      }
+    }
+  }
+}

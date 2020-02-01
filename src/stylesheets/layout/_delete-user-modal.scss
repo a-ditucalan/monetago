@@ -1,0 +1,78 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.modal-popup.ui.tiny.modal.transition.visible.active {
+  top: 50%;
+  right: 5%;
+
+  overflow-y: hidden;
+
+  transform: translate(0, -50%);
+}
+
+.delete-content {
+  text-align: center;
+
+  .btn-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-cancel {
+      margin-right: 30px;
+      width: 150px;
+      height: 50px;
+
+      box-shadow: none !important;
+
+      transition: all .2s ease-in-out;
+
+      @include on-event {
+        color: $gray-600;
+
+        background-color: transparent;
+        box-shadow: 0 6px 10px $gray-500 !important;
+      }
+    }
+
+    .btn-deact {
+      width: 150px;
+      height: 50px;
+    }
+  }
+}
+
+.ui.modal > .content {
+  padding: 7% 14%;
+}
+
+@include respond-to(lg) {
+  .delete-content {
+    p {
+      font-size: 21px;
+    }
+
+    .btn-actions {
+      .btn-cancel {
+        margin-right: 15px;
+        width: 110px;
+        height: 40px;
+
+        font-size: 12px;
+      }
+      .btn-deact {
+        width: 110px;
+        height: 40px;
+
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+@charset 'UTF-8';
+// Configuration and helpers
+@import 'utils/variables', 'utils/functions', 'utils/mixins';
+
+// Base stuff
+@import 'base/base', 'base/fonts', 'base/typography', 'base/animation';
+
+// Layout-related sections
+@import 'layout/table', 'layout/main-navbar',
+  'layout/sidebar', 'layout/content-header', 'layout/main-modal',
+  'layout/innertabs', 'layout/add-user-on-account-tab',
+  'layout/edit-modal', 'layout/set-role-modal-popup', 'layout/organization-card',
+  'layout/delete-user-modal', 'layout/add-new-organization',
+  'layout/corporate-identity', 'layout/forgot-password',
+  'layout/add-new-contact', 'layout/organization-card-list',
+  'layout/ipa-main-navbar', 'layout/ipa-sidebar', 'layout/ipa-dashboard-cards', 'layout/corporate-entity', 'layout/corporate-modal', 'layout/idle-modal';
+
+// Components
+@import 'components/buttons', 'components/pop-up', 'components/filter',
+  'components/input', 'components/toggle', 'components/notif';
+
+// Page-specific styles
+@import 'pages/login', 'pages/dashboard', 'pages/ipa-user-login';
+// , 'pages/main-navigation'

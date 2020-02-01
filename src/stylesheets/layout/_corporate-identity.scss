@@ -1,0 +1,127 @@
+/**  Copyright 2020 MonetaGo, Inc.  All Rights Reserved.
+ *  This code is copyrighted material that is confidential andproprietary to MonetaGo, Inc.
+ *  and may not (in whole or in part) be published, publicly displayed,copied, modified or
+ *  used in any way other than as expressly permitted in a writtenagreement executed by
+ *  MonetaGo, Inc.  No portion of this code may be used to createderivative works or exploited
+ *  in any other way without MonetaGo, Inc.’s prior written consent.  Noportion of this code
+ *  may be transmitted or redistributed to any person without MonetaGo,Inc.’s prior written
+ *  consent. This notice may not be deleted or modified without MonetaGo,Inc.’s consent.
+ */
+
+.corporate-identity {
+  margin-top: 30px;
+  margin-left: 80px;
+  max-width: 900px;
+
+  .org-details-holder {
+    margin-bottom: 30px;
+  }
+
+  .add-contact-btn {
+    @extend .tbl-data-text;
+    display: flex;
+    padding: 10px;
+
+    color: $brand-color;
+
+    background: none;
+    &:hover {
+      background: none;
+    }
+  }
+
+  .org-identity-name-holder {
+    margin-bottom: 15px;
+  }
+  &-info {
+    margin-bottom: 15px;
+  }
+
+  .org-contact-holder {
+    margin-bottom: 15px;
+  }
+
+  .contact-person-holder {
+    position: relative;
+
+    .contact-person {
+      padding: 30px 0;
+    }
+
+    .edit-holder {
+      position: absolute;
+
+      width: 100%;
+
+      // border: none;
+    }
+    .textarea-label {
+      display: none;
+    }
+  }
+
+  .separation {
+    margin: 0 10px;
+  }
+
+  .contact-person-name {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+    .corporate-textarea {
+      width: 100%;
+    }
+  }
+
+
+  .edit-holder {
+    position: relative;
+
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid $gray-100;
+
+    .edit-title {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: fit-content;
+
+      text-align: left;
+
+      transform: translate(0%, -50%);
+
+      background: #fff;
+    }
+
+    .edit-btn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 70px;
+
+      text-align: center;
+
+      cursor: pointer;
+      transform: translate(0%, -50%);
+
+      background: #fff;
+    }
+  }
+
+  textarea.corporate-textarea {
+    width: 50%;
+
+    border: 1px solid $blue-300;
+
+    resize: none;
+  }
+}
+
+.org-address-edit,.org-contact-edit,.contact-person-edit,
+.org-participants-edit {
+  display: none;
+}
